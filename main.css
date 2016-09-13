@@ -1,0 +1,116 @@
+
+/*preloading*/
+body:after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content: url("assets/Picture1.jpg") url("assets/Picture2.jpg") url("assets/Picture3.jpg") url("assets/Picture4.jpg") url("assets/Picture5.jpg");
+}
+
+body{
+	background: black;
+	color: white;
+}
+
+@keyframes changePic {
+	10%,100% {background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture1.jpg");
+   	background-size: 100%;
+    background-repeat: no-repeat;}
+    30% {background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;}
+	50% {background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture3.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;}
+	70% {background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture4.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;}
+	90% {background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture5.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;}
+}
+
+#myPic{
+	background:     radial-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 1)
+    ),url("assets/Picture1.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 200px;
+    z-index: 1;
+	position: relative;
+	height: 270px;
+	width: 480px;
+	display: inline-block;
+	top:12px;
+	animation: changePic 20s infinite;
+}
+
+#outerC{
+	height: 300px;
+	width: 500px;
+	margin: 0 auto;
+    border-radius: 200px;
+    background: red;
+/*    border: 3px solid blue;
+*/	text-align: center;
+	animation: heartbeat 5s infinite;
+}
+
+@keyframes heartbeat{
+	0%,100%{background: black;}
+	50%{background: #921212;}
+}
+
+li > img{
+	width:100px;
+	height: 100px;
+	display:block;
+}
+
+li > img:hover{
+	opacity: .25;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.skills{
+	opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+li{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+ul{
+	text-align: center;
+}
+
+@media(max-width: 506px) {
+
+}
+
+
+/*font-family: 'Autour One', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Arima Madurai', cursive;*/
