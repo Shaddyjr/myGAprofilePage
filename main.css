@@ -10,6 +10,16 @@ body{
 	color: white;
 }
 
+.smallArt p{
+	display: none;
+}
+
+.turnOn{
+	display: inline;
+	transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
 @keyframes changePic {
 	10%,100% {background:     radial-gradient(
       rgba(0, 0, 0, 0), 
@@ -81,26 +91,58 @@ li > img{
 	width:100px;
 	height: 100px;
 	display:block;
+    border-radius: 20px;
+    border:2px solid #921212;
 }
 
 li > img:hover{
-	opacity: .25;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+/*	opacity: .25;
+*/    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
-.skills{
+.skills, .number, .fill{
 	opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+#contact{
+	text-align: center;
+}
+
+#contact img{
+	width:100px;
+	/*height: */
+}
+
+.number{
+	position: relative;
+	top:0;
+}
+
+.fill{
+	position: absolute;
+	width: 90%;
+	bottom:22px; /*This will change with font size*/
+	left:3px;
+	background: rgba(180,0,0,.75);
+    border-radius: 15px;
+	border:2px solid #921212;
+	pointer-events: none
 }
 
 li{
+	position: relative;
 	display: inline-block;
 	margin: 0 auto;
 }
 
 ul{
+	text-align: center;
+}
+
+article{
 	text-align: center;
 }
 
