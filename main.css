@@ -17,9 +17,9 @@ body{
 
 #mainContent p, #mainContent a,#mainContent article, article h2{
 	font-family: 'Righteous', cursive;
-	width:500px;
+	max-width:500px;
 	text-align: left;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 a{
 	color: rgb(226, 119, 226);
@@ -75,19 +75,21 @@ font-family: 'Arima Madurai', cursive;
 
 #myName{
 	font-family: 'Yellowtail', cursive;
-	font-size: 35px;
+	font-size: 50px;
 	margin-bottom: 20px;
 }
 
 #underName{
 	font-family: 'Autour One', cursive;
 	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 
 #highlightLine{
 	margin:5px auto;
 	height: 2px;
-	width: 800px;
+	max-width: 800px;
 	background: radial-gradient(
       rgba(225, 0, 0, 1), 
       rgba(225, 0, 0, 0)
@@ -102,7 +104,7 @@ font-family: 'Arima Madurai', cursive;
 	border: 2px solid #921212;
 	background:-webkit-linear-gradient(60deg ,#AD1100, #990061);
 	border-radius:15px;
-	text-shadow: 5px 0 black;
+	text-shadow: -2px 0 black;
 	cursor: pointer;
 }
 
@@ -115,11 +117,11 @@ font-family: 'Arima Madurai', cursive;
 
 
 #mainHeaders{
-	padding: 30px 0 30px 0;
+	padding: 10px 0 10px 0;
 }
 
 #subHeadersInner{
-	margin: 30px auto;
+	margin: 10px auto;
 }
 
 
@@ -195,6 +197,7 @@ li > img:hover{
 #contact div > *{
 	text-align: center;
 	display: block;
+	margin: 10px auto;
 }
 #contact img{
 	width:100px;
@@ -212,6 +215,7 @@ li > img:hover{
 	border-radius:15px;
 	cursor: pointer;
 	color:white;
+	margin-bottom: 30px
 }
 
 .number{
@@ -244,9 +248,44 @@ article{
 	text-align: center;
 }
 
-@media(max-width: 506px) {
-
+@media(max-width: 985px) {
+	#mainHeaders h2, #subHeadersInner h3{
+		margin:0 0;
+	}
 }
+
+@media(max-width: 830px) {
+	.altOff{
+		display:none;
+	}
+	#myName{
+		font-size: 35px;
+	}
+	#underMyName{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 662px){
+	#mainHeaders h2, #subHeadersInner h3{
+		font-size: 18px;
+		margin:5px auto;
+		display: inline-block;
+	}
+	#mainHeaders{
+		padding: 5px 0 5px 0;
+	}
+
+	#subHeadersInner{
+		margin: 5px auto
+	}
+
+	#myName{
+		margin-bottom: 5px;
+	}
+}
+
+
 
 .turnOff{
 	display: none;
