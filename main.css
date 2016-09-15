@@ -8,18 +8,30 @@ body:after{
 body{
 	background: black;
 	color: white;
+	text-align: center;
 }
 
-.smallArt p{
+#mainContent > *{
 	display: none;
 }
 
-.turnOn{
+#mainContent p, #mainContent a,#mainContent article, article h2{
+	font-family: 'Righteous', cursive;
+	width:500px;
+	text-align: left;
+	margin: 30px auto;
+}
+a{
+	color: rgb(226, 119, 226);
+
+}
+
+/*.turnOn{
 	display: inline;
 	transition: all .5s;
     -webkit-transition: all .5s;
 }
-
+*/
 @keyframes changePic {
 	10%,100% {background:     radial-gradient(
       rgba(0, 0, 0, 0), 
@@ -53,8 +65,79 @@ body{
     background-repeat: no-repeat;}
 }
 
+/*
+font-family: 'Autour One', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Arima Madurai', cursive;
+*/
+
+#myName{
+	font-family: 'Yellowtail', cursive;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+#underName{
+	font-family: 'Autour One', cursive;
+	font-size: 16px;
+}
+
+#highlightLine{
+	margin:5px auto;
+	height: 2px;
+	width: 800px;
+	background: radial-gradient(
+      rgba(225, 0, 0, 1), 
+      rgba(225, 0, 0, 0)
+    )
+}
+
+#mainHeaders h2, #subHeadersInner h3{
+	display: inline;
+	margin: 40px;
+	padding: 0 10px 0 10px;
+	font-family: 'Permanent Marker', cursive;
+	border: 2px solid #921212;
+	background:-webkit-linear-gradient(60deg ,#AD1100, #990061);
+	border-radius:15px;
+	text-shadow: 5px 0 black;
+	cursor: pointer;
+}
+
+#mainHeaders h2:hover, #subHeadersInner h3:hover{
+	border: 2px solid #ad2d70;
+	background:-webkit-linear-gradient(60deg ,#990061, #AD1100);
+	color: rgb(226, 119, 226);
+}
+
+
+
+#mainHeaders{
+	padding: 30px 0 30px 0;
+}
+
+#subHeadersInner{
+	margin: 30px auto;
+}
+
+
+#midPics img{
+	height:150px;
+	display: flex-block;
+	vertical-align: middle;
+	border: 1px solid #921212;
+
+}
+
+#midPics{
+	
+/*	display: inline-block;
+*/}
+
 #myPic{
-	background:     radial-gradient(
+	background:radial-gradient(
       rgba(0, 0, 0, 0), 
       rgba(0, 0, 0, 1)
     ),url("assets/Picture1.jpg");
@@ -77,8 +160,7 @@ body{
 	margin: 0 auto;
     border-radius: 200px;
     background: red;
-/*    border: 3px solid blue;
-*/	text-align: center;
+	text-align: center;
 	animation: heartbeat 5s infinite;
 }
 
@@ -107,13 +189,29 @@ li > img:hover{
     -webkit-transition: all 1s;
 }
 
-#contact{
+#contact div{
 	text-align: center;
 }
-
+#contact div > *{
+	text-align: center;
+	display: block;
+}
 #contact img{
 	width:100px;
-	/*height: */
+}
+
+#techSkills{
+	margin-top: 30px;
+}
+
+#toggle{
+	padding: 0 10px 0 10px;
+	font-family: 'Permanent Marker', cursive;
+	border: 2px solid #921212;
+	background:-webkit-linear-gradient(60deg ,#AD1100, #990061);
+	border-radius:15px;
+	cursor: pointer;
+	color:white;
 }
 
 .number{
@@ -150,9 +248,10 @@ article{
 
 }
 
+.turnOff{
+	display: none;
+}
 
-/*font-family: 'Autour One', cursive;
-font-family: 'Yellowtail', cursive;
-font-family: 'Righteous', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Arima Madurai', cursive;*/
+/* .turnOn{
+	display: block;
+} */

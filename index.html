@@ -14,23 +14,55 @@
 
 	<div id="mainHeaders">
 	<!-- 3 tab/button selection -->
-		<h2>About Me</h2>
-		<h2>Technical Skills</h2>
-		<h2 >Contact Info</h2>
+		<h2 onclick="activate(this)">About Me</h2>
+		<h2 onclick="activate(this)">Technical Skills</h2>
+		<h2 onclick="activate(this)">Contact Info</h2>
 	</div>
+
+	<div id="highlightLine"></div>
 	<div id="midPics">
 		<!-- 3 blocks of pics -->
+		<img class="mainPic" src="assets/Picture2.jpg" alt="">
+		<img class="mainPic" src="assets/Picture1.jpg" alt="">
+		<img class="mainPic" src="assets/Picture3.jpg" alt="">
+
+		<img class="aboutMePic turnOff" src="assets/GU1.jpg" alt="">
+		<img class="aboutMePic turnOff" src="assets/bees.jpg" alt="">
+		<img class="aboutMePic turnOff" src="assets/asc.jpg" alt="">
+
+		<img class="eduPic turnOff" src="assets/GU1.jpg" alt="">
+		<img class="eduPic turnOff" src="assets/GU2.jpg" alt="">
+
+		<img class="workPic turnOff" src="assets/asc.jpg" alt="">
+		<img class="workPic turnOff" src="assets/asc1.png" alt="">
+		<img class="workPic turnOff" src="assets/ss2.png" alt="">
+
+		<img class="funPic turnOff" src="assets/bees.jpg" alt="">
+		<img class="funPic turnOff" src="assets/kam.jpg" alt="">
+		<img class="funPic turnOff" src="assets/code.jpg" alt="">
+
+		<img class="futurePic turnOff" src="assets/future1.jpg" alt="">
+
+		<img class="techPic turnOff" src="assets/code.jpg" alt="">
+		
+		<img class="contactPic turnOff" src="assets/Picture1.jpg" alt="">
+
 	</div>
+	<div id="highlightLine"></div>
+
 	<div id="mainContent">
 		<!-- content by ID and sub headers -->
-		<div id="subHeaders">
-			<h3>Education</h3>
-			<h3>Work Experience</h3>
-			<h3>What I do for fun!</h3>
-			<h3>Future Plans</h3>
+		<div id="subHeadersOuter">
+			<div id="subHeadersInner">
+				<h3 onclick="activate(this)">Education</h3>
+				<h3 onclick="activate(this)">Work Experience</h3>
+				<h3 onclick="activate(this)">What I do for fun!</h3>
+				<h3 onclick="activate(this)">Future Plans</h3>
+			</div>
+		<div id="highlightLine"></div>
 		</div>
 
-		<p id="edu">I recieved my BS in Biology from Georgetown University. Years later, I recieved my master's in Biolgy from New York Univerity, with a focus on bioinformatics. Currently, I'm a month from recieving certification in <a href="https://www.coursera.org/specializations/jhu-data-science">Data Science Specialization</a> from John Hopkin's online Coursera course.</p>
+		<p id="edu" class="turnOn">I recieved my BS in Biology from Georgetown University. Years later, I recieved my master's in Biolgy from New York Univerity, with a focus on bioinformatics. Currently, I'm a month from recieving certification in <a href="https://www.coursera.org/specializations/jhu-data-science">Data Science Specialization</a> from John Hopkin's online Coursera course.</p>
 
 		<article id="work">
 			<h2><a href="http://www.allstarcode.org/">All Star Code</a></h2>
@@ -47,9 +79,9 @@
 			<p>Additionally, I plan to use what I learn to benefit my community. I've already promised to help the <a href="http://www.meetup.com/nyc-beekeeping/?https=off">New York City beekeepers</a> in making a user-friendly app to help with record-keeping and data collection.</p>
 			<p>Of course I will also <strong>finally</strong> be able to create the many apps I've had in mind for years for my own personal use.</p>
 		</article>
-
-		<ul id="techSkills">
-		<button onclick="allChangeAll()">Toggle</button>
+		
+		<div id="techSkills">
+		<ul>
 			<li>
 				<img class="skillImg" src="assets/python.png" alt="">
 				<div class="fill">
@@ -100,6 +132,8 @@
 				<span class="skills">C</span>
 			</li>
 		</ul>
+		<button id="toggle" onclick="allChangeAll()">Toggle</button>
+		</div>
 
 		<article id="contact">
 			<div>	
